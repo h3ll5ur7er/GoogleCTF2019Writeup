@@ -6,35 +6,40 @@ import binascii
 import requests
 import struct
 import sys
+from pprint import pprint
 
 HUB_ENDPOINT = '/SendIRCommand'
 
-COMMANDS = {k: "__{:02}__".format(k) for k in range(0x100)}
+COMMAND_COUNT = 0x100
+
+MAX_DATA = 0x10
+
+COMMANDS = {k: "__{}__".format(hex(k)) for k in range(COMMAND_COUNT)}
 CMD_PING = 0x01
-COMMANDS[CMD_PING] = "PING"
+COMMANDS[CMD_PING] += "PING"
 
 
 CMD_GETTEMP = 0x10
-COMMANDS[CMD_GETTEMP] = "TEMP"
+COMMANDS[CMD_GETTEMP] += "TEMP"
 
 CMD_GETHUMIDITY = 0x11
-COMMANDS[CMD_GETHUMIDITY] = "CMD_GETHUMIDITY"
+COMMANDS[CMD_GETHUMIDITY] += "CMD_GETHUMIDITY"
 
 CMD_GETCO2 = 0x12
-COMMANDS[CMD_GETCO2] = "CMD_GETCO2"
+COMMANDS[CMD_GETCO2] += "CMD_GETCO2"
 
 CMD_GETSMOKEDETECTOR = 0x13
-COMMANDS[CMD_GETSMOKEDETECTOR] = "CMD_GETSMOKEDETECTOR"
+COMMANDS[CMD_GETSMOKEDETECTOR] += "CMD_GETSMOKEDETECTOR"
 
 
 CMD_SETTIME = 0x20
-COMMANDS[CMD_SETTIME] = "CMD_SETTIME"
+COMMANDS[CMD_SETTIME] += "CMD_SETTIME"
 
 CMD_SYSVER = 0x30
-COMMANDS[CMD_SYSVER] = "CMD_SYSVER"
+COMMANDS[CMD_SYSVER] += "CMD_SYSVER"
 
 CMD_REPLY = 0x80
-COMMANDS[CMD_REPLY] = "CMD_REPLY"
+COMMANDS[CMD_REPLY] += "CMD_REPLY"
 
 
 def crc8(data):
@@ -71,17 +76,19 @@ def send_command(host, command, arguments, expected_reply_len=None):
     if len(reply) == 0:
         # It's offline
         print('Smart Clock is unreachable.')
-        sys.exit(0)
+        #sys.exit(0)
+        pass
     if len(reply)-1 != expected_reply_len and expected_reply_len is not None:
         print('Smart Clock returned an invalid response.')
-        sys.exit(0)
+        #sys.exit(0)
+        pass
 
     # Verify that the reply command is correct
     if reply[0] != command | CMD_REPLY:
         print('Invalid reply received')
         sys.exit(1)
 
-    return reply[1:].decode("utf-8")
+    return reply[1:]
 
 
 def main():
@@ -120,21 +127,29 @@ def main():
 
         # If we get here it's gotta be good.
         print('Pong! Smart Clock is online.')
-
-    for i in range(100):
+    all_sucessful_requests = {}
+    for i in range(COMMAND_COUNT):
         successful_requests = {}
-        for p in range(10):
-            params = b"\00" * p
+        for p in range(MAX_DATA):
+            params = b"\ff" * p
             try:
                 reply = send_command(parse_result.host, i, params)
-                successful_requests[params] = reply
-            except:
+                key = params.hex()
+                print(key)
+                successful_requests[key] = reply.decode()
+            except Exception as e:
                 reply = "Request Failed!"
+                print(e)
+        all_sucessful_requests[COMMANDS[i]] = successful_requests
         print("-------- {} -------------".format(COMMANDS[i]))
-        print(successful_requests)
+        pprint(successful_requests)
         print()
         print()
-
+    pprint(all_sucessful_requests)
+    import json
+    with open("dump.json", "w") as f:
+        json.dump(all_sucessful_requests, f)
+    
     if parse_result.get_temperature:
         reply = send_command(parse_result.host, CMD_GETTEMP, b'', 2)
         temperature = (reply[0] << 8 | reply[1])/10.0
@@ -165,3 +180,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+b'\x16\x17\x18\x19'

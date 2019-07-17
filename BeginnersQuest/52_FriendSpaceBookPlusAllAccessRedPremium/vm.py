@@ -1,10 +1,12 @@
 
 import sys
-
+from collections import deque
+from pprint import pprint
 # Implements a simple stack-based VM
 class VM:
 
   def __init__(self, rom):
+    self.cmd_queue = deque(maxlen=50)
     self.rom = rom
     self.accumulator1 = 0
     self.accumulator2 = 0
@@ -26,12 +28,18 @@ class VM:
       fn(self)
 
   def add(self):
-    self.stack.append(self.stack.pop() + self.stack.pop())
+    v1 = self.stack.pop()
+    v2 = self.stack.pop()
+    v3 = v1 + v2
+    self.cmd_queue.appendleft("add {} + {} = {}".format(v1, v2, v3))
+    self.stack.append(v3)
 
   def sub(self):
-    a = self.stack.pop()
-    b = self.stack.pop()
-    self.stack.append(b - a)
+    v1 = self.stack.pop()
+    v2 = self.stack.pop()
+    v3 = v2 - v1
+    self.cmd_queue.appendleft("sub {} - {} = {}".format(v1, v2, v3))
+    self.stack.append(v3)
 
   def if_zero(self):
     if self.stack[-1] == 0:
@@ -65,22 +73,38 @@ class VM:
     marker = '🖋' + marker[1:]
     self.instruction_pointer = self.rom.index(marker) + 1
 
+    self.cmd_queue.appendleft("jmp {} @ {}".format(marker[1:], self.instruction_pointer))
+
+
   def jump_top(self):
-    self.instruction_pointer = self.stack.pop()
+    addr = self.stack.pop()
+    self.cmd_queue.appendleft("jmp {}".format(addr))
+    self.instruction_pointer = addr
 
   def exit(self):
     print('\nDone.')
     raise SystemExit()
 
   def print_top(self):
-    sys.stdout.write(chr(self.stack.pop()))
-    sys.stdout.flush()
+    self.cmd_queue.appendleft("print")
+    val = self.stack.pop()
+    print("char: '{}' ascii: {} acc1: {} acc2: {}".format(
+      chr(val),
+      val,
+      self.accumulator1,
+      self.accumulator2))
+    for cmd in self.cmd_queue:
+      print("\t", cmd)
+    #sys.stdout.write(chr(self.stack.pop()))
+    #sys.stdout.flush()
 
   def push(self):
     if self.rom[self.instruction_pointer] == '🥇':
       self.stack.append(self.accumulator1)
+      self.cmd_queue.appendleft("push {} @ {}".format("acc1", self.accumulator1))
     elif self.rom[self.instruction_pointer] == '🥈':
       self.stack.append(self.accumulator2)
+      self.cmd_queue.appendleft("push {} @ {}".format("acc2", self.accumulator2))
     else:
       raise RuntimeError('Unknown instruction {} at position {}'.format(
           self.rom[self.instruction_pointer], str(self.instruction_pointer)))
@@ -89,14 +113,17 @@ class VM:
   def pop(self):
     if self.rom[self.instruction_pointer] == '🥇':
       self.accumulator1 = self.stack.pop()
+      self.cmd_queue.appendleft("pop {} @ {}".format("acc1", self.accumulator1))
     elif self.rom[self.instruction_pointer] == '🥈':
       self.accumulator2 = self.stack.pop()
+      self.cmd_queue.appendleft("pop {} @ {}".format("acc2", self.accumulator2))
     else:
       raise RuntimeError('Unknown instruction {} at position {}'.format(
           self.rom[self.instruction_pointer], str(self.instruction_pointer)))
     self.instruction_pointer += 1
 
   def pop_out(self):
+    self.cmd_queue.appendleft("pop /dev/null")
     self.stack.pop()
 
   def load(self):
@@ -119,31 +146,42 @@ class VM:
       self.accumulator1 = num
     else:
       self.accumulator2 = num
+    self.cmd_queue.appendleft("mov acc{} {}".format(acc, num))
 
     self.instruction_pointer += 1
 
   def clone(self):
-    self.stack.append(self.stack[-1])
+    top = self.stack[-1]
+    self.cmd_queue.appendleft("clone top of stack {}".format(top))
+    self.stack.append(top)
 
   def multiply(self):
-    a = self.stack.pop()
-    b = self.stack.pop()
-    self.stack.append(b * a)
+    v1 = self.stack.pop()
+    v2 = self.stack.pop()
+    v3 = v1 * v2
+    self.cmd_queue.appendleft("mul {} * {} = {}".format(v1, v2, v3))
+    self.stack.append(v3)
 
   def divide(self):
-    a = self.stack.pop()
-    b = self.stack.pop()
-    self.stack.append(b // a)
+    v1 = self.stack.pop()
+    v2 = self.stack.pop()
+    v3 = v2 // v1
+    self.cmd_queue.appendleft("div {} / {} = {}".format(v1, v2, v3))
+    self.stack.append(v3)
 
   def modulo(self):
-    a = self.stack.pop()
-    b = self.stack.pop()
-    self.stack.append(b % a)
+    v1 = self.stack.pop()
+    v2 = self.stack.pop()
+    v3 = v2 % v1
+    self.cmd_queue.appendleft("mod {} % {} = {}".format(v1, v2, v3))
+    self.stack.append(v3)
 
   def xor(self):
-    a = self.stack.pop()
-    b = self.stack.pop()
-    self.stack.append(b ^ a)
+    v1 = self.stack.pop()
+    v2 = self.stack.pop()
+    v3 = v2 ^ v1
+    self.cmd_queue.appendleft("xor {} ^ {} = {}".format(v1, v2, v3))
+    self.stack.append(v3)
 
   OPERATIONS = {
       '🍡': add,

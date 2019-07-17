@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>no title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#c5c8c6;background-color:#27292c !important;border:#43484c;border-radius:3px}pre[class*="language-"]{padding:1em}code[class*="language-"] .token.comment,pre[class*="language-"] .token.comment,code[class*="language-"] .token.prolog,pre[class*="language-"] .token.prolog,code[class*="language-"] .token.doctype,pre[class*="language-"] .token.doctype,code[class*="language-"] .token.cdata,pre[class*="language-"] .token.cdata{color:#7C7C7C}code[class*="language-"] .token.punctuation,pre[class*="language-"] .token.punctuation{color:#96CBFE}code[class*="language-"] .namespace,pre[class*="language-"] .namespace{opacity:.7}code[class*="language-"] .token.constant,pre[class*="language-"] .token.constant{color:#99CC99}code[class*="language-"] .token.boolean,pre[class*="language-"] .token.boolean,code[class*="language-"] .token.number,pre[class*="language-"] .token.number,code[class*="language-"] .token.function-name,pre[class*="language-"] .token.function-name{color:#FF73FD}code[class*="language-"] .token.tag,pre[class*="language-"] .token.tag{color:#96CBFE}code[class*="language-"] .token.selector,pre[class*="language-"] .token.selector{color:#96CBFE}code[class*="language-"] .token.attr-name,pre[class*="language-"] .token.attr-name{color:#C6C5FE}code[class*="language-"] .token.string,pre[class*="language-"] .token.string{color:#A8FF60}code[class*="language-"] .token.char,pre[class*="language-"] .token.char{color:#FF8000}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{color:#FFD2A7}code[class*="language-"] .token.url,pre[class*="language-"] .token.url{color:#7C7C7C}code[class*="language-"] .token.operator,pre[class*="language-"] .token.operator{color:#EDEDED}code[class*="language-"] .token.atrule,pre[class*="language-"] .token.atrule,code[class*="language-"] .token.attr-value,pre[class*="language-"] .token.attr-value,code[class*="language-"] .token.keyword,pre[class*="language-"] .token.keyword{color:#CFCB90}code[class*="language-"] .token.function,pre[class*="language-"] .token.function{color:#FFD2A7}code[class*="language-"] .token.class-name,pre[class*="language-"] .token.class-name{color:#FFD2A7}code[class*="language-"] .token.variable,pre[class*="language-"] .token.variable{color:#C6C5FE}code[class*="language-"] .token.regex,pre[class*="language-"] .token.regex,code[class*="language-"] .token.important,pre[class*="language-"] .token.important{color:#E9C062}code[class*="language-"] .token.important,pre[class*="language-"] .token.important,code[class*="language-"] .token.bold,pre[class*="language-"] .token.bold{font-weight:bold}code[class*="language-"] .token.italic,pre[class*="language-"] .token.italic{font-style:italic}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{cursor:help}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:rgba(153,122,102,0.08);background:linear-gradient(to right, rgba(153,122,102,0.1) 70%, rgba(153,122,102,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:rgba(153,122,102,0.4);color:#f5f2f0;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px white}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}.emoji {
+  height: 0.8em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#ccc;background-color:#141414;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#fff}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#a3a3a3}html body strong{color:#fff}html body del{color:#a3a3a3}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#a3a3a3;border-left:4px solid #3d3d3d}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#3d3d3d;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#fff}html body table td,html body table th{border:1px solid #3d3d3d;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#fff;background-color:#282828;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#3d3d3d;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#fff;border:1px solid #3d3d3d;border-bottom:2px solid #2e2e2e;padding:2px 4px;background-color:#282828;border-radius:3px}@media print{html body{background-color:#141414}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#fff;page-break-after:avoid}html body blockquote{color:#a3a3a3}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}
+    /* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+h1 {
+  color: White;
+}
+.glitch {
+  -webkit-animation: glitch-skew 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite;
+  animation: glitch-skew 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite;
+  font-family: orbitron, sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+.glitch__main {
+  color: #FFF;
+}
+.glitch__color {
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  z-index: -1;
+}
+.glitch__color--red {
+  -webkit-animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  color: red;
+}
+.glitch__color--blue {
+  animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite reverse;
+  color: blue;
+}
+.glitch__color--green {
+  -webkit-animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 1000ms infinite;
+  animation: glitch 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 1000ms infinite;
+  color: #00FF0B;
+}
+.glitch__line {
+  -webkit-animation: glitch-line 2s linear infinite;
+  animation: glitch-line 2s linear infinite;
+  background: #000;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.glitch__line--first {
+  -webkit-animation: glitch-line 2s linear infinite;
+  animation: glitch-line 2s linear infinite;
+}
+.glitch__line--second {
+  -webkit-animation: glitch-line 1s linear 1s infinite;
+  animation: glitch-line 1s linear 1s infinite;
+}
+@-webkit-keyframes glitch {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-4px, 4px);
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    -webkit-transform: translate(-4px, -4px);
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  80% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes glitch {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-4px, 4px);
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    -webkit-transform: translate(-4px, -4px);
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  80% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes glitch-skew {
+  0% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+  }
+  48% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+  50% {
+    -webkit-transform: skew(-20deg, 0deg);
+    transform: skew(-20deg, 0deg);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  52% {
+    -webkit-transform: skew(20deg, 0deg);
+    transform: skew(20deg, 0deg);
+  }
+  54% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+  100% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+  }
+}
+@keyframes glitch-skew {
+  0% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+  }
+  48% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+  50% {
+    -webkit-transform: skew(-20deg, 0deg);
+    transform: skew(-20deg, 0deg);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  52% {
+    -webkit-transform: skew(20deg, 0deg);
+    transform: skew(20deg, 0deg);
+  }
+  54% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+  100% {
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+  }
+}
+@-webkit-keyframes glitch-line {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes glitch-line {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+/*# sourceMappingURL=writeup.css.map */
+
+    </style>
+    
+  </head>
+  <body for="html-export">
+    <div class="mume markdown-preview">
+    <html><head></head><body><div><p><span class="glitch__line glitch__line--first"></span><br>
+<span class="glitch__line glitch__line--second"></span></p>
+<h1 class="glitch glitch__color glitch__color--red">Gate Lock</h1>
+<h1 class="glitch glitch__color glitch__color--green">Gate Lock</h1>
+<h1 class="glitch glitch__color glitch__color--blue">Gate Lock</h1>
+<h1 class="glitch glitch__color">Gate Lock</h1>
+<br>
+<br>
+<h2 class="mume-header" id="data-exploration">Data exploration</h2>
+
+<p>there are 3 sqlite databases with the following schemata:</p>
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="433px" preserveAspectRatio="none" style="width:822px;height:433px;" version="1.1" viewBox="0 0 822 433" width="822px" zoomAndPan="magnify"><defs><filter height="300%" id="fnyi9jc6ai9cw" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster datamodel--><polygon fill="#FFFFFF" filter="url(#fnyi9jc6ai9cw)" points="14,16,102,16,109,38.2969,800,38.2969,800,421,14,421,14,16" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="14" x2="109" y1="38.2969" y2="38.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="18" y="30.9951">datamodel</text><!--cluster players.sqlite--><polygon fill="#FFFFFF" filter="url(#fnyi9jc6ai9cw)" points="425,43,537,43,544,65.2969,792,65.2969,792,413,425,413,425,43" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="425" x2="544" y1="65.2969" y2="65.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="106" x="429" y="57.9951">players.sqlite</text><!--cluster map.sqlite--><polygon fill="#FFFFFF" filter="url(#fnyi9jc6ai9cw)" points="313,94,400,94,407,116.2969,410,116.2969,410,203,313,203,313,94" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="313" x2="407" y1="116.2969" y2="116.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="81" x="317" y="108.9951">map.sqlite</text><!--cluster auth.sqlite--><polygon fill="#FFFFFF" filter="url(#fnyi9jc6ai9cw)" points="22,81.5,111,81.5,118,103.7969,299,103.7969,299,400.5,22,400.5,22,81.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="118" y1="103.7969" y2="103.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="83" x="26" y="96.4951">auth.sqlite</text><!--class player--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="176.0469" id="player" style="stroke: #A80036; stroke-width: 1.5;" width="170" x="433" y="70"/><ellipse cx="494.75" cy="86" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M497.7188,91.6406 Q497.1406,91.9375 496.5,92.0781 Q495.8594,92.2344 495.1563,92.2344 Q492.6563,92.2344 491.3281,90.5938 Q490.0156,88.9375 490.0156,85.8125 Q490.0156,82.6875 491.3281,81.0313 Q492.6563,79.375 495.1563,79.375 Q495.8594,79.375 496.5,79.5313 Q497.1563,79.6875 497.7188,79.9844 L497.7188,82.7031 Q497.0938,82.125 496.5,81.8594 Q495.9063,81.5781 495.2813,81.5781 Q493.9375,81.5781 493.25,82.6563 Q492.5625,83.7188 492.5625,85.8125 Q492.5625,87.9063 493.25,88.9844 Q493.9375,90.0469 495.2813,90.0469 Q495.9063,90.0469 496.5,89.7813 Q497.0938,89.5 497.7188,88.9219 L497.7188,91.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="515.25" y="90.1543">player</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="434" x2="602" y1="102" y2="102"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="56" x="439" y="116.2104">name: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="439" y="129.0151">pitch: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="439" y="141.8198">yaw: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="439" y="154.6245">posX: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="439" y="167.4292">posY: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63" x="439" y="180.2339">posZ: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="439" y="193.0386">hp: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="439" y="205.8433">breath: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="439" y="218.6479">creation_date: datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="158" x="439" y="231.4526">modification_date: datetime</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="434" x2="602" y1="238.0469" y2="238.0469"/><!--class player_inventories--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="112.0234" id="player_inventories" style="stroke: #A80036; stroke-width: 1.5;" width="145" x="638.5" y="102"/><ellipse cx="653.5" cy="118" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M656.4688,123.6406 Q655.8906,123.9375 655.25,124.0781 Q654.6094,124.2344 653.9063,124.2344 Q651.4063,124.2344 650.0781,122.5938 Q648.7656,120.9375 648.7656,117.8125 Q648.7656,114.6875 650.0781,113.0313 Q651.4063,111.375 653.9063,111.375 Q654.6094,111.375 655.25,111.5313 Q655.9063,111.6875 656.4688,111.9844 L656.4688,114.7031 Q655.8438,114.125 655.25,113.8594 Q654.6563,113.5781 654.0313,113.5781 Q652.6875,113.5781 652,114.6563 Q651.3125,115.7188 651.3125,117.8125 Q651.3125,119.9063 652,120.9844 Q652.6875,122.0469 654.0313,122.0469 Q654.6563,122.0469 655.25,121.7813 Q655.8438,121.5 656.4688,120.9219 L656.4688,123.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="113" x="667.5" y="122.1543">player_inventories</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="639.5" x2="782.5" y1="134" y2="134"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="644.5" y="148.2104">player: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="644.5" y="161.0151">inv_id: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="644.5" y="173.8198">inv_width: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="644.5" y="186.6245">inv_name: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="644.5" y="199.4292">inv_size: int</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="639.5" x2="782.5" y1="206.0234" y2="206.0234"/><!--class player_inventory_items--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="99.2188" id="player_inventory_items" style="stroke: #A80036; stroke-width: 1.5;" width="173" x="433.5" y="306"/><ellipse cx="448.5" cy="322" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M451.4688,327.6406 Q450.8906,327.9375 450.25,328.0781 Q449.6094,328.2344 448.9063,328.2344 Q446.4063,328.2344 445.0781,326.5938 Q443.7656,324.9375 443.7656,321.8125 Q443.7656,318.6875 445.0781,317.0313 Q446.4063,315.375 448.9063,315.375 Q449.6094,315.375 450.25,315.5313 Q450.9063,315.6875 451.4688,315.9844 L451.4688,318.7031 Q450.8438,318.125 450.25,317.8594 Q449.6563,317.5781 449.0313,317.5781 Q447.6875,317.5781 447,318.6563 Q446.3125,319.7188 446.3125,321.8125 Q446.3125,323.9063 447,324.9844 Q447.6875,326.0469 449.0313,326.0469 Q449.6563,326.0469 450.25,325.7813 Q450.8438,325.5 451.4688,324.9219 L451.4688,327.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="141" x="462.5" y="326.1543">player_inventory_items</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="434.5" x2="605.5" y1="338" y2="338"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="439.5" y="352.2104">player: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="439.5" y="365.0151">inv_id: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="439.5" y="377.8198">slot_id: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="439.5" y="390.6245">item: str</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="434.5" x2="605.5" y1="397.2188" y2="397.2188"/><!--class player_metadata--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="86.4141" id="player_metadata" style="stroke: #A80036; stroke-width: 1.5;" width="137" x="641.5" y="312.5"/><ellipse cx="656.5" cy="328.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M659.4688,334.1406 Q658.8906,334.4375 658.25,334.5781 Q657.6094,334.7344 656.9063,334.7344 Q654.4063,334.7344 653.0781,333.0938 Q651.7656,331.4375 651.7656,328.3125 Q651.7656,325.1875 653.0781,323.5313 Q654.4063,321.875 656.9063,321.875 Q657.6094,321.875 658.25,322.0313 Q658.9063,322.1875 659.4688,322.4844 L659.4688,325.2031 Q658.8438,324.625 658.25,324.3594 Q657.6563,324.0781 657.0313,324.0781 Q655.6875,324.0781 655,325.1563 Q654.3125,326.2188 654.3125,328.3125 Q654.3125,330.4063 655,331.4844 Q655.6875,332.5469 657.0313,332.5469 Q657.6563,332.5469 658.25,332.2813 Q658.8438,332 659.4688,331.4219 L659.4688,334.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="105" x="670.5" y="332.6543">player_metadata</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="642.5" x2="777.5" y1="344.5" y2="344.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="647.5" y="358.7104">player: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="647.5" y="371.5151">metadata: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="647.5" y="384.3198">value: str</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="642.5" x2="777.5" y1="390.9141" y2="390.9141"/><!--class blocks--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="73.6094" id="blocks" style="stroke: #A80036; stroke-width: 1.5;" width="72" x="326" y="121"/><ellipse cx="341" cy="137" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M343.9688,142.6406 Q343.3906,142.9375 342.75,143.0781 Q342.1094,143.2344 341.4063,143.2344 Q338.9063,143.2344 337.5781,141.5938 Q336.2656,139.9375 336.2656,136.8125 Q336.2656,133.6875 337.5781,132.0313 Q338.9063,130.375 341.4063,130.375 Q342.1094,130.375 342.75,130.5313 Q343.4063,130.6875 343.9688,130.9844 L343.9688,133.7031 Q343.3438,133.125 342.75,132.8594 Q342.1563,132.5781 341.5313,132.5781 Q340.1875,132.5781 339.5,133.6563 Q338.8125,134.7188 338.8125,136.8125 Q338.8125,138.9063 339.5,139.9844 Q340.1875,141.0469 341.5313,141.0469 Q342.1563,141.0469 342.75,140.7813 Q343.3438,140.5 343.9688,139.9219 L343.9688,142.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="40" x="355" y="141.1543">blocks</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="327" x2="397" y1="153" y2="153"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="332" y="167.2104">pos: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="332" y="180.0151">data: blob</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="327" x2="397" y1="186.6094" y2="186.6094"/><!--class auth--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="99.2188" id="auth" style="stroke: #A80036; stroke-width: 1.5;" width="92" x="30" y="108.5"/><ellipse cx="58.95" cy="124.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M61.9188,130.1406 Q61.3406,130.4375 60.7,130.5781 Q60.0594,130.7344 59.3563,130.7344 Q56.8563,130.7344 55.5281,129.0938 Q54.2156,127.4375 54.2156,124.3125 Q54.2156,121.1875 55.5281,119.5313 Q56.8563,117.875 59.3563,117.875 Q60.0594,117.875 60.7,118.0313 Q61.3563,118.1875 61.9188,118.4844 L61.9188,121.2031 Q61.2938,120.625 60.7,120.3594 Q60.1063,120.0781 59.4813,120.0781 Q58.1375,120.0781 57.45,121.1563 Q56.7625,122.2188 56.7625,124.3125 Q56.7625,126.4063 57.45,127.4844 Q58.1375,128.5469 59.4813,128.5469 Q60.1063,128.5469 60.7,128.2813 Q61.2938,128 61.9188,127.4219 L61.9188,130.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="76.05" y="128.6543">auth</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="31" x2="121" y1="140.5" y2="140.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="36" y="154.7104">id: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="56" x="36" y="167.5151">name: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="36" y="180.3198">password: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76" x="36" y="193.1245">last_login: int</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="31" x2="121" y1="199.7188" y2="199.7188"/><!--class sqlite_sequence--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="73.6094" id="sqlite_sequence" style="stroke: #A80036; stroke-width: 1.5;" width="134" x="157" y="121"/><ellipse cx="172" cy="137" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M174.9688,142.6406 Q174.3906,142.9375 173.75,143.0781 Q173.1094,143.2344 172.4063,143.2344 Q169.9063,143.2344 168.5781,141.5938 Q167.2656,139.9375 167.2656,136.8125 Q167.2656,133.6875 168.5781,132.0313 Q169.9063,130.375 172.4063,130.375 Q173.1094,130.375 173.75,130.5313 Q174.4063,130.6875 174.9688,130.9844 L174.9688,133.7031 Q174.3438,133.125 173.75,132.8594 Q173.1563,132.5781 172.5313,132.5781 Q171.1875,132.5781 170.5,133.6563 Q169.8125,134.7188 169.8125,136.8125 Q169.8125,138.9063 170.5,139.9844 Q171.1875,141.0469 172.5313,141.0469 Q173.1563,141.0469 173.75,140.7813 Q174.3438,140.5 174.9688,139.9219 L174.9688,142.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102" x="186" y="141.1543">sqlite_sequence</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="158" x2="290" y1="153" y2="153"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="56" x="163" y="167.2104">name: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="163" y="180.0151">seq: str</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="158" x2="290" y1="186.6094" y2="186.6094"/><!--class user_privileges--><rect fill="#FEFECE" filter="url(#fnyi9jc6ai9cw)" height="73.6094" id="user_privileges" style="stroke: #A80036; stroke-width: 1.5;" width="125" x="30.5" y="318.5"/><ellipse cx="45.5" cy="334.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M48.4688,340.1406 Q47.8906,340.4375 47.25,340.5781 Q46.6094,340.7344 45.9063,340.7344 Q43.4063,340.7344 42.0781,339.0938 Q40.7656,337.4375 40.7656,334.3125 Q40.7656,331.1875 42.0781,329.5313 Q43.4063,327.875 45.9063,327.875 Q46.6094,327.875 47.25,328.0313 Q47.9063,328.1875 48.4688,328.4844 L48.4688,331.2031 Q47.8438,330.625 47.25,330.3594 Q46.6563,330.0781 46.0313,330.0781 Q44.6875,330.0781 44,331.1563 Q43.3125,332.2188 43.3125,334.3125 Q43.3125,336.4063 44,337.4844 Q44.6875,338.5469 46.0313,338.5469 Q46.6563,338.5469 47.25,338.2813 Q47.8438,338 48.4688,337.4219 L48.4688,340.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="93" x="59.5" y="338.6543">user_privileges</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="31.5" x2="154.5" y1="350.5" y2="350.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="36.5" y="364.7104">id: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="36.5" y="377.5151">privilege:str</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="31.5" x2="154.5" y1="384.1094" y2="384.1094"/><!--link player to player_inventories--><!--link player to player_inventory_items--><!--link player_inventory_items to player_metadata--><!--link auth to sqlite_sequence--><!--link auth to user_privileges--><!--
+@startuml
+package datamodel{
+    package players.sqlite{
+        class player{
+            name: str
+            pitch: float
+            yaw: float
+            posX: float
+            posY: float
+            posZ: float
+            hp: int
+            breath: int
+            creation_date: datetime
+            modification_date: datetime
+        }
+        class player_inventories{
+            player: str
+            inv_id: int
+            inv_width: int
+            inv_name: str
+            inv_size: int
+        }
+        class player_inventory_items{
+            player: str
+            inv_id: int
+            slot_id: int
+            item: str
+        }
+        class player_metadata{
+            player: str
+            metadata: str
+            value: str
+        }
+    }
+
+    package map.sqlite{
+        class blocks{
+            pos: int
+            data: blob
+        }
+    }
+
+    package auth.sqlite{
+        class auth{
+            id: int
+            name: str
+            password: str
+            last_login: int
+        }
+        class sqlite_sequence{
+            name: str
+            seq: str
+        }
+        class user_privileges{
+            id: int
+            privilege:str
+        }
+    }
+}
+@enduml
+
+PlantUML version 1.2019.07(Mon Jun 24 21:59:20 CEST 2019)
+(MIT source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7-post-Debian-5
+Operating System: Linux
+OS Version: 4.19.0-kali3-amd64
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg></p><p>This looks like a savegame. There are other files with no real clues on what&apos;s going on. After some googleing it turns out to be a savegame for <code>minetest</code>, a minecraft clone based in the irrlicht engine, written in c++ with lua scripting.</p>
+<h2 class="mume-header" id="setup">Setup</h2>
+
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token comment"># install dependencies</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> build-essential libirrlicht-dev cmake libbz2-dev libpng-dev libjpeg-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev libogg-dev libvorbis-dev libopenal-dev libcurl4-gnutls-dev libfreetype6-dev zlib1g-dev libgmp-dev libjsoncpp-dev
+
+<span class="token comment"># get the code</span>
+<span class="token function">git</span> clone --depth 1 https://github.com/minetest/minetest.git
+<span class="token function">cd</span> minetest
+<span class="token comment"># get the main game mode</span>
+<span class="token function">git</span> clone --depth 1 https://github.com/minetest/minetest_game.git games/minetest_game
+<span class="token comment"># build</span>
+cmake <span class="token keyword">.</span> -DRUN_IN_PLACE<span class="token operator">=</span>TRUE
+<span class="token function">make</span> -j 8
+<span class="token comment"># run</span>
+./bin/minetest
+</pre><p>It seems to run great. after loading the savegame (by copying the folder into minetest/worlds) and reading the log, there are some mods missing: <a href="https://github.com/minetest-mods/mesecons">Mesecons</a></p>
+<p>to install them:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">rm</span> mods/mods_here.txt
+<span class="token function">git</span> clone https://github.com/minetest-mods/mesecons mods
+./bin/minetest
+</pre><h2 class="mume-header" id="solution">Solution</h2>
+
+<p>there is a locked door attached to some logic circuit.</p>
+<p>after step by step reversing the circuit the <em>pattern</em> is formatted as a <a href="file:///root/ctf/GoogleCTF2019Writeup/BeginnersQuest/flags.html#80_gatelock">flag</a> (<code>CTF{</code>&lt;pattern&gt;<code>}</code>)</p>
+</div></body></html>
+    </div>
+  </body>
+</html>

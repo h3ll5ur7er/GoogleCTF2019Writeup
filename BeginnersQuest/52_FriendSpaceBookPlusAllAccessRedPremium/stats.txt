@@ -1,0 +1,1021 @@
+Running ....
+char: 'h' ascii: 104 acc1: 2 acc2: 389
+	 print
+	 xor 2 ^ 106 = 104
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 2
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 2
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 2 - 2 = 0
+	 push acc2 @ 2
+	 clone top of stack 2
+	 pop acc1 @ 2
+	 pop acc2 @ 2
+	 add 0 + 2 = 2
+	 push acc2 @ 0
+	 mod 10 % 2 = 2
+	 push acc1 @ 10
+	 pop acc2 @ 0
+	 mul 10 * 0 = 0
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc2 @ 0
+	 mov acc2 0
+	 clone top of stack 2
+	 clone top of stack 2
+	 jmp 🎌🏁💠🔶🚩 @ 1144
+	 pop /dev/null
+	 jmp 🔶🎌🚩💠🏁 @ 1050
+	 push acc1 @ 1
+	 mov acc1 1
+	 pop /dev/null
+	 sub 2 - 2 = 0
+	 push acc1 @ 2
+	 mov acc1 2
+	 clone top of stack 2
+	 jmp 🚩🔶🏁🎌💠 @ 1098
+	 push acc1 @ 2
+	 mov acc1 2
+	 jmp 🏁🚩🎌💠🔶 @ 1040
+	 push acc2 @ 1
+	 push acc1 @ 389
+	 mov acc1 389
+char: 't' ascii: 116 acc1: 3 acc2: 389
+	 print
+	 xor 3 ^ 119 = 116
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 3
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 3
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 3 - 3 = 0
+	 push acc2 @ 3
+	 clone top of stack 3
+	 pop acc1 @ 3
+	 pop acc2 @ 3
+	 add 0 + 3 = 3
+	 push acc2 @ 0
+	 mod 10 % 3 = 3
+	 push acc1 @ 10
+	 pop acc2 @ 0
+	 mul 10 * 0 = 0
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc2 @ 0
+	 mov acc2 0
+	 clone top of stack 3
+	 clone top of stack 3
+	 jmp 🎌🏁💠🔶🚩 @ 1144
+	 pop /dev/null
+	 jmp 🔶🎌🚩💠🏁 @ 1050
+	 push acc1 @ 1
+	 mov acc1 1
+	 pop /dev/null
+	 sub 3 - 3 = 0
+	 jmp 🎌🚩💠🔶🏁 @ 1106
+	 pop acc1 @ 3
+	 clone top of stack 3
+	 add 1 + 2 = 3
+	 push acc1 @ 1
+	 mov acc1 1
+	 push acc1 @ 2
+	 clone top of stack 3
+	 pop /dev/null
+	 mod 2 % 3 = 1
+char: 't' ascii: 116 acc1: 5 acc2: 389
+	 print
+	 xor 5 ^ 113 = 116
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 5
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 5
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 5 - 5 = 0
+	 push acc2 @ 5
+	 clone top of stack 5
+	 pop acc1 @ 5
+	 pop acc2 @ 5
+	 add 0 + 5 = 5
+	 push acc2 @ 0
+	 mod 10 % 5 = 5
+	 push acc1 @ 10
+	 pop acc2 @ 0
+	 mul 10 * 0 = 0
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc2 @ 0
+	 mov acc2 0
+	 clone top of stack 5
+	 clone top of stack 5
+	 jmp 🎌🏁💠🔶🚩 @ 1144
+	 pop /dev/null
+	 jmp 🔶🎌🚩💠🏁 @ 1050
+	 push acc1 @ 1
+	 mov acc1 1
+	 pop /dev/null
+	 sub 5 - 5 = 0
+	 jmp 🎌🚩💠🔶🏁 @ 1106
+	 pop acc1 @ 5
+	 clone top of stack 5
+	 add 1 + 4 = 5
+	 push acc1 @ 1
+	 mov acc1 1
+	 push acc1 @ 4
+	 clone top of stack 5
+	 pop /dev/null
+	 mod 4 % 5 = 1
+char: 'p' ascii: 112 acc1: 7 acc2: 389
+	 print
+	 xor 7 ^ 119 = 112
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 7
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 7
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 7 - 7 = 0
+	 push acc2 @ 7
+	 clone top of stack 7
+	 pop acc1 @ 7
+	 pop acc2 @ 7
+	 add 0 + 7 = 7
+	 push acc2 @ 0
+	 mod 10 % 7 = 7
+	 push acc1 @ 10
+	 pop acc2 @ 0
+	 mul 10 * 0 = 0
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc2 @ 0
+	 mov acc2 0
+	 clone top of stack 7
+	 clone top of stack 7
+	 jmp 🎌🏁💠🔶🚩 @ 1144
+	 pop /dev/null
+	 jmp 🔶🎌🚩💠🏁 @ 1050
+	 push acc1 @ 1
+	 mov acc1 1
+	 pop /dev/null
+	 sub 7 - 7 = 0
+	 jmp 🎌🚩💠🔶🏁 @ 1106
+	 pop acc1 @ 7
+	 clone top of stack 7
+	 add 1 + 6 = 7
+	 push acc1 @ 1
+	 mov acc1 1
+	 push acc1 @ 6
+	 clone top of stack 7
+	 pop /dev/null
+	 mod 6 % 7 = 1
+char: ':' ascii: 58 acc1: 11 acc2: 389
+	 print
+	 xor 11 ^ 49 = 58
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 11
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 11
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 11 - 11 = 0
+	 push acc2 @ 11
+	 clone top of stack 11
+	 pop acc1 @ 1
+	 pop acc2 @ 11
+	 add 10 + 1 = 11
+	 push acc2 @ 10
+	 mod 10 % 1 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 10
+	 mul 10 * 1 = 10
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 1
+	 clone top of stack 1
+	 div 10 / 11 = 1
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 11
+	 pop /dev/null
+	 sub 1 - 11 = 10
+	 push acc2 @ 1
+	 clone top of stack 11
+	 pop acc1 @ 11
+	 pop acc2 @ 1
+	 add 0 + 1 = 1
+	 push acc2 @ 0
+	 mod 10 % 11 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 0
+	 mul 10 * 0 = 0
+	 push acc1 @ 10
+	 mov acc1 10
+char: '/' ascii: 47 acc1: 101 acc2: 389
+	 print
+	 xor 101 ^ 74 = 47
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 101
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 101
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 101 - 101 = 0
+	 push acc2 @ 101
+	 clone top of stack 101
+	 pop acc1 @ 1
+	 pop acc2 @ 101
+	 add 100 + 1 = 101
+	 push acc2 @ 100
+	 mod 10 % 1 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 100
+	 mul 10 * 10 = 100
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 10
+	 clone top of stack 1
+	 div 10 / 10 = 1
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 10
+	 pop /dev/null
+	 sub 10 - 101 = 91
+	 push acc2 @ 10
+	 clone top of stack 101
+	 pop acc1 @ 10
+	 pop acc2 @ 10
+	 add 10 + 0 = 10
+	 push acc2 @ 10
+	 mod 10 % 10 = 0
+	 push acc1 @ 10
+	 pop acc2 @ 10
+	 mul 10 * 1 = 10
+	 push acc1 @ 10
+	 mov acc1 10
+char: '/' ascii: 47 acc1: 131 acc2: 389
+	 print
+	 xor 131 ^ 172 = 47
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 131
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 131
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 131 - 131 = 0
+	 push acc2 @ 131
+	 clone top of stack 131
+	 pop acc1 @ 1
+	 pop acc2 @ 131
+	 add 130 + 1 = 131
+	 push acc2 @ 130
+	 mod 10 % 1 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 130
+	 mul 10 * 13 = 130
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 13
+	 clone top of stack 1
+	 div 10 / 13 = 1
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 13
+	 pop /dev/null
+	 sub 13 - 131 = 118
+	 push acc2 @ 13
+	 clone top of stack 131
+	 pop acc1 @ 13
+	 pop acc2 @ 13
+	 add 10 + 3 = 13
+	 push acc2 @ 10
+	 mod 10 % 13 = 3
+	 push acc1 @ 10
+	 pop acc2 @ 10
+	 mul 10 * 1 = 10
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'e' ascii: 101 acc1: 151 acc2: 389
+	 print
+	 xor 151 ^ 242 = 101
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 151
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 151
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 151 - 151 = 0
+	 push acc2 @ 151
+	 clone top of stack 151
+	 pop acc1 @ 1
+	 pop acc2 @ 151
+	 add 150 + 1 = 151
+	 push acc2 @ 150
+	 mod 10 % 1 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 150
+	 mul 10 * 15 = 150
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 15
+	 clone top of stack 1
+	 div 10 / 15 = 1
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 15
+	 pop /dev/null
+	 sub 15 - 151 = 136
+	 push acc2 @ 15
+	 clone top of stack 151
+	 pop acc1 @ 15
+	 pop acc2 @ 15
+	 add 10 + 5 = 15
+	 push acc2 @ 10
+	 mod 10 % 15 = 5
+	 push acc1 @ 10
+	 pop acc2 @ 10
+	 mul 10 * 1 = 10
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'm' ascii: 109 acc1: 181 acc2: 389
+	 print
+	 xor 181 ^ 216 = 109
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 181
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 181
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 181 - 181 = 0
+	 push acc2 @ 181
+	 clone top of stack 181
+	 pop acc1 @ 1
+	 pop acc2 @ 181
+	 add 180 + 1 = 181
+	 push acc2 @ 180
+	 mod 10 % 1 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 180
+	 mul 10 * 18 = 180
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 18
+	 clone top of stack 1
+	 div 10 / 18 = 1
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 18
+	 pop /dev/null
+	 sub 18 - 181 = 163
+	 push acc2 @ 18
+	 clone top of stack 181
+	 pop acc1 @ 18
+	 pop acc2 @ 18
+	 add 10 + 8 = 18
+	 push acc2 @ 10
+	 mod 10 % 18 = 8
+	 push acc1 @ 10
+	 pop acc2 @ 10
+	 mul 10 * 1 = 10
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'o' ascii: 111 acc1: 191 acc2: 389
+	 print
+	 xor 191 ^ 208 = 111
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 191
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 191
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 191 - 191 = 0
+	 push acc2 @ 191
+	 clone top of stack 191
+	 pop acc1 @ 1
+	 pop acc2 @ 191
+	 add 190 + 1 = 191
+	 push acc2 @ 190
+	 mod 10 % 1 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 190
+	 mul 10 * 19 = 190
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 19
+	 clone top of stack 1
+	 div 10 / 19 = 1
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 19
+	 pop /dev/null
+	 sub 19 - 191 = 172
+	 push acc2 @ 19
+	 clone top of stack 191
+	 pop acc1 @ 19
+	 pop acc2 @ 19
+	 add 10 + 9 = 19
+	 push acc2 @ 10
+	 mod 10 % 19 = 9
+	 push acc1 @ 10
+	 pop acc2 @ 10
+	 mul 10 * 1 = 10
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'j' ascii: 106 acc1: 313 acc2: 389
+	 print
+	 xor 313 ^ 339 = 106
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 313
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 313
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 313 - 313 = 0
+	 push acc2 @ 313
+	 clone top of stack 313
+	 pop acc1 @ 3
+	 pop acc2 @ 313
+	 add 310 + 3 = 313
+	 push acc2 @ 310
+	 mod 10 % 3 = 3
+	 push acc1 @ 10
+	 pop acc2 @ 310
+	 mul 10 * 31 = 310
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 31
+	 clone top of stack 3
+	 div 10 / 31 = 3
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 31
+	 pop /dev/null
+	 sub 31 - 313 = 282
+	 push acc2 @ 31
+	 clone top of stack 313
+	 pop acc1 @ 31
+	 pop acc2 @ 31
+	 add 30 + 1 = 31
+	 push acc2 @ 30
+	 mod 10 % 31 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 30
+	 mul 10 * 3 = 30
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'i' ascii: 105 acc1: 353 acc2: 389
+	 print
+	 xor 353 ^ 264 = 105
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 353
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 353
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 353 - 353 = 0
+	 push acc2 @ 353
+	 clone top of stack 353
+	 pop acc1 @ 3
+	 pop acc2 @ 353
+	 add 350 + 3 = 353
+	 push acc2 @ 350
+	 mod 10 % 3 = 3
+	 push acc1 @ 10
+	 pop acc2 @ 350
+	 mul 10 * 35 = 350
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 35
+	 clone top of stack 3
+	 div 10 / 35 = 3
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 35
+	 pop /dev/null
+	 sub 35 - 353 = 318
+	 push acc2 @ 35
+	 clone top of stack 353
+	 pop acc1 @ 35
+	 pop acc2 @ 35
+	 add 30 + 5 = 35
+	 push acc2 @ 30
+	 mod 10 % 35 = 5
+	 push acc1 @ 10
+	 pop acc2 @ 30
+	 mul 10 * 3 = 30
+	 push acc1 @ 10
+	 mov acc1 10
+char: '-' ascii: 45 acc1: 373 acc2: 389
+	 print
+	 xor 373 ^ 344 = 45
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 373
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 373
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 373 - 373 = 0
+	 push acc2 @ 373
+	 clone top of stack 373
+	 pop acc1 @ 3
+	 pop acc2 @ 373
+	 add 370 + 3 = 373
+	 push acc2 @ 370
+	 mod 10 % 3 = 3
+	 push acc1 @ 10
+	 pop acc2 @ 370
+	 mul 10 * 37 = 370
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 37
+	 clone top of stack 3
+	 div 10 / 37 = 3
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 37
+	 pop /dev/null
+	 sub 37 - 373 = 336
+	 push acc2 @ 37
+	 clone top of stack 373
+	 pop acc1 @ 37
+	 pop acc2 @ 37
+	 add 30 + 7 = 37
+	 push acc2 @ 30
+	 mod 10 % 37 = 7
+	 push acc1 @ 10
+	 pop acc2 @ 30
+	 mul 10 * 3 = 30
+	 push acc1 @ 10
+	 mov acc1 10
+char: 't' ascii: 116 acc1: 383 acc2: 389
+	 print
+	 xor 383 ^ 267 = 116
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 383
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 383
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 383 - 383 = 0
+	 push acc2 @ 383
+	 clone top of stack 383
+	 pop acc1 @ 3
+	 pop acc2 @ 383
+	 add 380 + 3 = 383
+	 push acc2 @ 380
+	 mod 10 % 3 = 3
+	 push acc1 @ 10
+	 pop acc2 @ 380
+	 mul 10 * 38 = 380
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 38
+	 clone top of stack 3
+	 div 10 / 38 = 3
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 38
+	 pop /dev/null
+	 sub 38 - 383 = 345
+	 push acc2 @ 38
+	 clone top of stack 383
+	 pop acc1 @ 38
+	 pop acc2 @ 38
+	 add 30 + 8 = 38
+	 push acc2 @ 30
+	 mod 10 % 38 = 8
+	 push acc1 @ 10
+	 pop acc2 @ 30
+	 mul 10 * 3 = 30
+	 push acc1 @ 10
+	 mov acc1 10
+char: '0' ascii: 48 acc1: 727 acc2: 389
+	 print
+	 xor 727 ^ 743 = 48
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 727
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 727
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 727 - 727 = 0
+	 push acc2 @ 727
+	 clone top of stack 727
+	 pop acc1 @ 7
+	 pop acc2 @ 727
+	 add 720 + 7 = 727
+	 push acc2 @ 720
+	 mod 10 % 7 = 7
+	 push acc1 @ 10
+	 pop acc2 @ 720
+	 mul 10 * 72 = 720
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 72
+	 clone top of stack 7
+	 div 10 / 72 = 7
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 72
+	 pop /dev/null
+	 sub 72 - 727 = 655
+	 push acc2 @ 72
+	 clone top of stack 727
+	 pop acc1 @ 72
+	 pop acc2 @ 72
+	 add 70 + 2 = 72
+	 push acc2 @ 70
+	 mod 10 % 72 = 2
+	 push acc1 @ 10
+	 pop acc2 @ 70
+	 mul 10 * 7 = 70
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'a' ascii: 97 acc1: 757 acc2: 389
+	 print
+	 xor 757 ^ 660 = 97
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 757
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 757
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 757 - 757 = 0
+	 push acc2 @ 757
+	 clone top of stack 757
+	 pop acc1 @ 7
+	 pop acc2 @ 757
+	 add 750 + 7 = 757
+	 push acc2 @ 750
+	 mod 10 % 7 = 7
+	 push acc1 @ 10
+	 pop acc2 @ 750
+	 mul 10 * 75 = 750
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 75
+	 clone top of stack 7
+	 div 10 / 75 = 7
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 75
+	 pop /dev/null
+	 sub 75 - 757 = 682
+	 push acc2 @ 75
+	 clone top of stack 757
+	 pop acc1 @ 75
+	 pop acc2 @ 75
+	 add 70 + 5 = 75
+	 push acc2 @ 70
+	 mod 10 % 75 = 5
+	 push acc1 @ 10
+	 pop acc2 @ 70
+	 mul 10 * 7 = 70
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'n' ascii: 110 acc1: 787 acc2: 389
+	 print
+	 xor 787 ^ 893 = 110
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 787
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 787
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 787 - 787 = 0
+	 push acc2 @ 787
+	 clone top of stack 787
+	 pop acc1 @ 7
+	 pop acc2 @ 787
+	 add 780 + 7 = 787
+	 push acc2 @ 780
+	 mod 10 % 7 = 7
+	 push acc1 @ 10
+	 pop acc2 @ 780
+	 mul 10 * 78 = 780
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 78
+	 clone top of stack 7
+	 div 10 / 78 = 7
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 78
+	 pop /dev/null
+	 sub 78 - 787 = 709
+	 push acc2 @ 78
+	 clone top of stack 787
+	 pop acc1 @ 78
+	 pop acc2 @ 78
+	 add 70 + 8 = 78
+	 push acc2 @ 70
+	 mod 10 % 78 = 8
+	 push acc1 @ 10
+	 pop acc2 @ 70
+	 mul 10 * 7 = 70
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'a' ascii: 97 acc1: 797 acc2: 389
+	 print
+	 xor 797 ^ 892 = 97
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 797
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 797
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 797 - 797 = 0
+	 push acc2 @ 797
+	 clone top of stack 797
+	 pop acc1 @ 7
+	 pop acc2 @ 797
+	 add 790 + 7 = 797
+	 push acc2 @ 790
+	 mod 10 % 7 = 7
+	 push acc1 @ 10
+	 pop acc2 @ 790
+	 mul 10 * 79 = 790
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 79
+	 clone top of stack 7
+	 div 10 / 79 = 7
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 79
+	 pop /dev/null
+	 sub 79 - 797 = 718
+	 push acc2 @ 79
+	 clone top of stack 797
+	 pop acc1 @ 79
+	 pop acc2 @ 79
+	 add 70 + 9 = 79
+	 push acc2 @ 70
+	 mod 10 % 79 = 9
+	 push acc1 @ 10
+	 pop acc2 @ 70
+	 mul 10 * 7 = 70
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'x' ascii: 120 acc1: 919 acc2: 389
+	 print
+	 xor 919 ^ 1007 = 120
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 919
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 919
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 919 - 919 = 0
+	 push acc2 @ 919
+	 clone top of stack 919
+	 pop acc1 @ 9
+	 pop acc2 @ 919
+	 add 910 + 9 = 919
+	 push acc2 @ 910
+	 mod 10 % 9 = 9
+	 push acc1 @ 10
+	 pop acc2 @ 910
+	 mul 10 * 91 = 910
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 91
+	 clone top of stack 9
+	 div 10 / 91 = 9
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 91
+	 pop /dev/null
+	 sub 91 - 919 = 828
+	 push acc2 @ 91
+	 clone top of stack 919
+	 pop acc1 @ 91
+	 pop acc2 @ 91
+	 add 90 + 1 = 91
+	 push acc2 @ 90
+	 mod 10 % 91 = 1
+	 push acc1 @ 10
+	 pop acc2 @ 90
+	 mul 10 * 9 = 90
+	 push acc1 @ 10
+	 mov acc1 10
+char: 'n' ascii: 110 acc1: 929 acc2: 389
+	 print
+	 xor 929 ^ 975 = 110
+	 jmp 389
+	 push acc2 @ 389
+	 push acc1 @ 929
+	 pop acc2 @ 389
+	 pop /dev/null
+	 sub 1 - 1 = 0
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop acc1 @ 929
+	 pop /dev/null
+	 jmp 🎌🏁🚩🔶💠 @ 1060
+	 push acc2 @ 1
+	 mov acc2 1
+	 pop /dev/null
+	 sub 929 - 929 = 0
+	 push acc2 @ 929
+	 clone top of stack 929
+	 pop acc1 @ 9
+	 pop acc2 @ 929
+	 add 920 + 9 = 929
+	 push acc2 @ 920
+	 mod 10 % 9 = 9
+	 push acc1 @ 10
+	 pop acc2 @ 920
+	 mul 10 * 92 = 920
+	 push acc1 @ 10
+	 mov acc1 10
+	 jmp 🏁💠🔶🚩🎌 @ 1153
+	 push acc2 @ 92
+	 clone top of stack 9
+	 div 10 / 92 = 9
+	 push acc1 @ 10
+	 mov acc1 10
+	 push acc1 @ 92
+	 pop /dev/null
+	 sub 92 - 929 = 837
+	 push acc2 @ 92
+	 clone top of stack 929
+	 pop acc1 @ 92
+	 pop acc2 @ 92
+	 add 90 + 2 = 92
+	 push acc2 @ 90
+	 mod 10 % 92 = 2
+	 push acc1 @ 10
+	 pop acc2 @ 90
+	 mul 10 * 9 = 90
+	 push acc1 @ 10
+	 mov acc1 10
